@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfóĺio | Marco Túlio Candeo</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,57 +18,241 @@
       </a>
 
       <div class="nav-links">
-        <a class="nav-item" href="#">Home</a>
-        <a class="nav-item" href="#">Projetos</a>
-        <a class="nav-item" href="#">Experiência</a>
-        <a class="nav-item" href="#">Contato</a>
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#projetos">Projetos</a>
+        <a class="nav-item" href="#experiencias">Experiência</a>
+        <a class="nav-item" href="#contato">Contato</a>
       </div>
     </nav>
     
-    <main id="hero" class="box-width">
+    <main id="home" class="box-width">
       <img src="./assets/foto-marco-tulio.jpg" />
       <h1>Criando código e inspirando inovação, um <span class="gradient-text">projeto de cada vez!</span></h1>
-      <h2>Sou um engenheiro de software full-stack com mais de 8 anos de experiência, especializado em desenvolvimento backend. Minha expertise está em criar arquiteturas robustas e escaláveis baseadas em SaaS na plataforma Amazon AWS.</h2>
+      <h2>Sou um engenheiro de software full-stack com mais de 6 anos de experiência, especializado em desenvolvimento backend. Minha expertise está em criar arquiteturas robustas e escaláveis baseadas em SaaS na plataforma Amazon AWS.</h2>
 
       <div class="hero-buttons">
-        <button id="contact-button" class="button">Entrar em contato</button>
-        <button id="cv-button" class="button">Download CV</button>
+        <button onClick="onClickContactButton(event)" id="contact-button" class="button">Entrar em contato</button>
+        <button onClick="downloadResume(event)" id="cv-button" class="button">Download CV</button>
       </div>
 
       <h3>Principais Tecnologias</h3>
-      <i>ICON1</i>
-      <i>ICON1</i>
-      <i>ICON1</i>
-      <i>ICON1</i>
+
+      <div class="tech-icons">
+        <ion-icon name="logo-nodejs" class="icon-gradient"></ion-icon>
+        <ion-icon name="logo-python"></ion-icon>
+        <ion-icon name="logo-tux"></ion-icon>
+        <ion-icon name="logo-react"></ion-icon>
+      </div>
     </main>
 
-    <h3>Projetos Destaque</h3>
+    <section id="projetos" class="box-width">
+      <h3 class="gradient-text">Projetos Destaque</h3>
+      
+      <div class="projects-grid">
+        <a target="_blank" href="https://oqueassistirhoje.com.br" class="project">
+          <img src="./assets/oqueassistirhoje.png" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>O QUE ASSISTIR HOJE?</h1>
+            </div>
 
-    <a href="https://oqueassistirhoje.com.br">
-      <img src="./assets/oqueassistirhoje.png" />
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://app.inchats.me" class="project">
+          <img src="./assets/inchats.jpg" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>InChats</h1>
+            </div>
 
-      <span>Clique aqui para visitar</span>
-      <h1>O QUE ASSISTIR HOJE?</h1>
-    </a>
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://play.google.com/store/apps/developer?id=MotelX&hl=gsw&gl=US" class="project">
+          <img src="./assets/motelx.png" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>MotelX APP</h1>
+            </div>
 
-    <h3>Experiências</h3>
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.emerson.app&hl=gsw&gl=US" class="project">
+          <img src="./assets/emersonlima.png" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>Emerson Lima E-commerce</h1>
+            </div>
 
-    <i>ICON</i>
-    <h1>Engenheiro de Software Sênior<h1>
-    <h2>SET 2023 - MOMENTO</h2>
-    <p>
-      A MZ é líder global em soluções de relações com investidores.
-    </p>
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://bedlam.gg" class="project">
+          <img src="./assets/bedlam.jpeg" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>Bedlam.gg</h1>
+            </div>
 
-    <h1>Contato</h1>
-    <h2>Sou um engenheiro de software full-stack com mais de 8 anos de experiência, especializado em desenvolvimento backend. Minha expertise está em criar arquiteturas robustas e escaláveis baseadas em SaaS na plataforma Amazon AWS.</h2>
-    <a>
-      <i>icon</i>
-      marcotuliocandeo@outlook.com
-    </a>
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=app.caml.com&hl=gsw&gl=US" class="project">
+          <img src="./assets/caml.jpg" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>Clube Atlético Monte Líbano</h1>
+            </div>
 
-    <i>ICON</i>
-    <i>ICON</i>
-    <i>ICON</i>
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://docs.google.com/presentation/d/1XccwVbBZRNrqMRHL4h2rt6kIxUoKqPklhkEjtvcR2aU/edit?usp=sharing" class="project">
+          <img src="./assets/zapplus.png" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>ZapPlus Extensão browser</h1>
+            </div>
+
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://jessmxavier.vercel.app/" class="project">
+          <img src="./assets/jessmxavier.png" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>@jessmxavier Links</h1>
+            </div>
+
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+        <a target="_blank" href="https://docs.google.com/presentation/d/1sVVX8r3S2pktnMkYUfXJr0mTR_U9c5j0/edit?usp=sharing&ouid=100113644239353792205&rtpof=true&sd=true" class="project">
+          <img src="./assets/mercury.png" />
+          
+          <div class="description">
+            <div class="project-description">
+              <span>Clique aqui para visitar</span>
+              <h1>Mercury Chatbot</h1>
+            </div>
+
+            <ion-icon name="arrow-forward-outline" class="redirect-icon"></ion-icon>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="experiencias" class="box-width">
+      <h3 class="gradient-text-green">Experiências</h3>
+
+      <div class="experience">
+        <div class="experience-title">
+          <a target="_blank" href="https://mzgroup.com" class="enterprise">
+            <img src="./assets/mzgroup.png">
+            <h1>Engenheiro de Software Sênior<h1>
+          </a>
+
+          <h2>Set 2023 - Momento</h2>
+        </div>
+        <p>
+          A MZ é líder global em soluções de relações com investidores. Aqui atuo como desenvolvedor sênior na plataforma de acionistas, guiando e ajudando os demais desenvolvedores da squad. Trouxe também melhorias significativas como a implementação de um ambiente de infraestrutura local, aprimoramentos nos processos ágeis e scrum, além de promover boas práticas em bancos de dados.
+        </p>
+      </div>
+      <div class="experience">
+        <div class="experience-title">
+          <a target="_blank" href="https://gamersclub.com.br" class="enterprise">
+            <img src="./assets/gamersclub.png">
+            <h1>Engenheiro de Software<h1>
+          </a>
+
+          <h2>Abril 2022 - Set 2023</h2>
+        </div>
+        <p>
+          GamersClub é a maior plataforma de esportes eletrônicos do Brasil, Aqui, já atuei como desenvolvedor backend da plataforma Multigaming (gamersclub.gg) e da plataforma de jogos web3 Bedlam, utilizando Typescript, MySQL, Cache, Redis. Trabalhei também na squad de CSGO (gamersclub.com.br), trabalhando na plataforma como desenvolvedor, utilizando PHP, MySQL e React.
+        </p>
+      </div>
+      <div class="experience">
+        <div class="experience-title">
+          <a target="_blank" href="https://b1app.com.br" class="enterprise">
+            <img src="./assets/blueone.svg">
+            <h1>Líder Técnico<h1>
+          </a>
+
+          <h2>Maio 2021 - Abril 2022</h2>
+        </div>
+        <p>
+          Responsável pelo gerenciamento da equipe de desenvolvimento, utilizando a metodologia Ágil, juntamente ao Scrum.
+        </p>
+      </div>
+      <div class="experience">
+        <div class="experience-title">
+          <a target="_blank" href="https://b1app.com.br" class="enterprise">
+            <img src="./assets/blueone.svg">
+            <h1>Engenheiro de Software<h1>
+          </a>
+
+          <h2>Dez 2019 - Maio 2021</h2>
+        </div>
+        <p>
+          Trabalhei integrando a equipe de desenvolvimento para criarmos do zero uma plataforma CRM, onde além de realizar o gerenciamento da jornada do cliente, também integramos conceitos de Omnichannel, sendo assim, realizando toda a orquestração dos mais diversos canais de atendimento em uma aplicação. Para esse projeto, trabalhamos com NodeJS, TypeScript, Angular, Git, Microserviços, Kubernetes, Postgres, SIP, WebRTC.
+        </p>
+      </div>
+      <div class="experience">
+        <div class="experience-title">
+          <a target="_blank" href="https://adaptive.com.br/" class="enterprise">
+            <img src="./assets/adaptive.png">
+            <h1>Aprendiz<h1>
+          </a>
+
+          <h2>Mar 2019 - Dez 2019</h2>
+        </div>
+        <p>
+          Fui contratado como jovem aprendiz, porém aqui, desenvolvi uma plataforma para facilitar e ajudar no dia a dia da equipe de suporte. A plataforma era uma base de conhecimento, onde a equipe de suporte poderia cadastrar manuais de passo a passo sobre erros e dúvidas comuns no sistema. Assim, os clientes antes de entrar em contato via chat ou e-mail, poderiam realizar a busca de sua dúvida, e resolver seu problema por conta própria.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato" class="box-width">
+      <h1>Contato</h1>
+      <h2>Sou um engenheiro de software full-stack com mais de 6 anos de experiência, especializado em desenvolvimento backend. Minha expertise está em criar arquiteturas robustas e escaláveis baseadas em SaaS na plataforma Amazon AWS.</h2>
+      <a class="email-link" target="_blank" href="mailto:marcotuliocandeo@outlook.com">
+        <ion-icon class="email-icon" name="mail-outline"></ion-icon>
+        marcotuliocandeo@outlook.com
+      </a>
+
+      <div class="social-networks">
+        <a target="_blank" href="https://linkedin.com/in/marcotuliocnd">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a target="_blank" href="https://wa.me/5534998725002">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <a target="_blank" href="https://github.com/marcotuliocnd">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </section>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
